@@ -1,0 +1,44 @@
+import pandas as pd
+import numpy as np
+from sklearn import preprocessing
+
+iris=pd.read_csv("iris.csv")
+iris
+
+iris.head(5)
+
+iris.tail(5)
+
+iris.index
+
+iris.columns
+
+iris.shape
+
+iris.dtypes
+
+iris.columns.values
+
+iris.describe(include='all')
+
+iris['SepalLengthCm']
+
+iris.sort_index(axis=1, ascending=False)
+
+iris.sort_values(by="SepalLengthCm")
+
+iris.iloc[5]
+
+iris.loc[:,["SepalLengthCm","PetalLengthCm"]]
+
+iris.iloc[:10, :]
+
+iris.iloc[3:5, 0:2]
+
+iris.isnull().any()
+
+iris['Species'].unique()
+
+
+
+
